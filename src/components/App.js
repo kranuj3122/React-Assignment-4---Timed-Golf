@@ -36,15 +36,9 @@ class Timer extends React.Component {
       this.timer = setInterval(() => {
         this.clock();
       }, 1000);
-    } else {
-      clearInterval(this.timer);
-      this.setState({ time: 0, x: 0, y: 0 });
-      document.addEventListener("keydown", this.handleEvent);
-      this.timer = setInterval(() => {
-        this.clock();
-      }, 1000);
     }
   }
+
   componentDidMount() {}
   clock() {
     this.setState({ time: this.state.time + 1 });
