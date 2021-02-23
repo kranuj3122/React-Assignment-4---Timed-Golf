@@ -12,28 +12,24 @@ class Timer extends React.Component {
     switch (event.keyCode) {
       case 37:
         this.setState({ x: this.state.x - 5 });
-        console.log("case ", this.state.x, this.state.y);
+        // console.log("case ", this.state.x, this.state.y);
         break;
       case 38:
         this.setState({ y: this.state.y - 5 });
-        console.log("case ", this.state.x, this.state.y);
+        // console.log("case ", this.state.x, this.state.y);
         break;
       case 39:
         this.setState({ x: this.state.x + 5 });
-        console.log("case ", this.state.x, this.state.y);
+        // console.log("case ", this.state.x, this.state.y);
         break;
       case 40:
         this.setState({ y: this.state.y + 5 });
-        console.log("case ", this.state.x, this.state.y);
+        // console.log("case ", this.state.x, this.state.y);
         break;
       default:
         break;
     }
-    console.log("case k bahar ", this.state.x, this.state.y);
-    if (this.state.x === this.state.y && this.state.x === 250) {
-      document.removeEventListener("keydown", this.handleEvent);
-      clearInterval(this.timer);
-    }
+    // console.log("case k bahar ", this.state.x, this.state.y);
   }
   handleClick() {
     if (this.state.time === 0) {
@@ -45,6 +41,12 @@ class Timer extends React.Component {
   }
 
   componentDidMount() {}
+  componentDidUpdate() {
+    if (this.state.x === this.state.y && this.state.x === 250) {
+      document.removeEventListener("keydown", this.handleEvent);
+      clearInterval(this.timer);
+    }
+  }
   clock() {
     this.setState({ time: this.state.time + 1 });
   }
