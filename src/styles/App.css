@@ -32,7 +32,7 @@
 
 .hole {
   background-color: rgb(62, 85, 107);
-  box-shadow: 0 10px 10px 0px;
+  /* box-shadow: 0 10px 10px 0px; */
   position: absolute;
   top: 250px;
   left: 250px;
