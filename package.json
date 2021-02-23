@@ -1,7 +1,7 @@
 {
   "name": "react-boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "- Render a start button. The timer starts on clicking the start button. Timer counts in seconds.\r - Render a ball and a hole(destiny).\r - Before clicking the start button, the ball should not move with arrow keys.\r - After clicking the start button, ball should move by using up, down, left and right arrow keys. (each key should shift the ball by 5px in respective direction).\r - When the ball goes into the hole, timer should stop.\r - Make sure you give the components the right class names as mentioned in the details below and that you use the right state variable names\r - Carefully complete timer start and stop actions",
   "main": "index.js",
   "scripts": {
     "test": "jest",
@@ -49,5 +49,13 @@
     "webpack": "^4.44.2",
     "webpack-dev-server": "^3.11.0",
     "xml-js": "^1.6.11"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kranuj3122/React-Assignment-4---Timed-Golf.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kranuj3122/React-Assignment-4---Timed-Golf/issues"
+  },
+  "homepage": "https://github.com/kranuj3122/React-Assignment-4---Timed-Golf#readme"
 }
